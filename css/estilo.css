@@ -1,0 +1,340 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url(../Fontes/Nunito/static/Nunito-Regular.ttf);
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url(../Fontes/Ubuntu/Ubuntu-Regular.ttf)
+}
+
+body, html{
+  height: 100%;
+  background-color: white;
+}
+
+body{
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  display: flex;
+}
+
+#lateral{
+  position:fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  border-right: solid 1px #805B10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+  flex-shrink: 0;
+}
+
+#principal{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  height: 2000px;
+}
+
+.logo{
+  height: 70px;
+  width: 92px;
+  margin: 16px 0px 0px 32px;
+  color: #EDC531;
+}
+
+.navegação, #icon1{
+  height: 25px;
+  width: 25px;
+  float: left;
+  margin-left: 32px;
+}
+
+.menu a{
+  font-family: Nunito, sans-serif;
+  font-size: 24px;
+  color: #805B10;
+  text-decoration: none;
+  margin-top: 3px;
+  margin-left: 12px;
+}
+
+.menu a:hover{
+  background-color: #eee;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.piar{
+  font-family: Nunito, sans-serif;
+  font-size: 28px;
+  background-color: #EDC531;
+  color: white;
+  border-radius: 64px;
+  height: 55px;
+  width: 75%;
+  letter-spacing: 1px;
+  border-style: none;
+  margin-left: 32px;
+  margin-top: 10px;
+}
+
+#tiraUsuario{
+  width: 252px;
+  margin-bottom: 16px;
+}
+
+.user{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 0px;
+  margin-top: 2px;
+}
+
+#nome{
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+}
+
+.name, .usuario{
+  font-family: Ubuntu, sans-serif;
+  font-size: 16px;
+  color: #805B10;
+  margin-left: 8px;
+  text-align: left;
+}
+
+.usuario{
+  color: #B69121;
+}
+
+.ret{
+  height: 32px;
+  width: 32px;
+  margin-top: 8px;
+  margin-left: 32px;
+}
+
+.perfil{
+  border: none;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  width: 92%;
+  margin-left: 32px;
+  padding: 5px;
+  background-color: white;
+}
+
+.perfil:hover{
+  background-color: #eee;
+}
+
+#homeInput{
+  display: flex;
+  width: 100%;
+  border-bottom: solid 1px #805B10;
+}
+
+#home{
+  width: 20%;
+  padding: 2rem 0rem 5rem 3rem;
+}
+
+#home h1{
+  font-family: Nunito, sans-serif;
+  font-size: 24px;
+  color: #805B10;
+  padding-bottom: 1rem;
+}
+
+.userBig{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+#inputPiu{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+#txtPiu{
+  width: 100%;
+  background-color: white;
+  border: none;
+  padding-top: 6.5rem;
+  padding-bottom: 2rem;
+  font-family: Ubuntu, sans-serif;
+  color: #805B10;
+  font-size: 20px;
+  padding-left: 1rem;
+  resize: none;
+}
+
+.caracteres{
+  font-family: Ubuntu;
+  color: #805B10; 
+}
+
+#txtPiu::placeholder{
+  color: #805B10;
+}
+
+#txtPiu:focus{
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+#inputPiu ul{
+  display: flex;
+  list-style: none;
+  width: 80%;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.inputImg{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#botãoPiar2{
+  display: flex;
+  width: 25%;
+  flex-direction: column-reverse;
+  padding-bottom: 0.5rem;
+  border-right: solid 1px #805B10;
+}
+
+#btn2{
+  font-family: Nunito, sans-serif;
+  font-size: 28px;
+  background-color: #EDC531;
+  color: white;
+  border-radius: 64px;
+  height: 25%;
+  width: 75%;
+  letter-spacing: 1px;
+  border-style: none;
+}
+
+#pius {
+  display: flex;
+  flex-direction: column;
+  border-right: solid 1px #805B10 ;
+}
+
+#pesquisa{
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  align-items: center;
+}
+
+#barraPesquisa{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  border: solid 1px #805B10;
+  border-radius: 4rem;
+}
+
+#search{
+  width: 100%;
+  padding-left: 15%;
+  padding-top: 1rem;
+}
+
+#searchInput{
+  width: 80%;
+  background-color: white;
+  border: none;
+  padding: 0.5rem 0rem;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 1.5rem;  
+  background-image: src("imagens/search.svg");
+	background-repeat:no-repeat;
+  color: #805B10
+}
+
+#searchInput::placeholder{
+  color: #805B10;
+}
+
+#searchInput:focus{
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+#lupa{
+  padding-left: 10px;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+#pesquisa h1{
+  font-family: Ubuntu, sans-serif;
+  color: #805B10;
+  padding: 2rem 0rem;
+  font-size: 1.9rem;
+}
+
+#acontecimentos{
+  display: flex;
+  flex-direction: column;
+}
+
+.acont{
+  display: flex;
+  padding-left: 2rem;
+}
+
+.tituloFoto{
+  font-family: Ubuntu, sans-serif;
+  color: #805B10;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ituloFoto h2{
+  font-size: 1.5rem;
+}
+
+.tituloFoto p{
+  color: #EDC531;
+  text-align: justify;
+}
+
+.photoAcontecimentos{
+  width: 45%;
+  height: 45%;
+  padding-top: 0.5rem;
+}

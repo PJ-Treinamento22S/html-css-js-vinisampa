@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente de usuario a versão html
+que deve ser renderizada-->
+
+<html lang="pt-br">
+  <head>  
+    <title> Entrega Treinamento Piupiuwer </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Vinícius Sampaio">
+    <meta name="description" content="Feed Piupiuwer">
+    <meta name="keywords" content="html, css, js, Piupiuwer, NTec">
+
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"> </script>
+    
+  </head>
+
+  <body>
+    <div id="lateral">
+      <header>
+        <img src="../imagens/undraw_handcrafts_bird.svg" class="logo" alt="Logotipo">
+      </header>
+      
+      <nav>
+        <ul>
+          <li class="menu">
+            <img src="../imagens/home-free-icon-font.svg" class="navegação" alt="casa">
+            <a href="index.html"><b>Home</b></a>
+          </li>
+
+          <li class="menu">
+            <img src="../imagens/hastag-free-icon-font.svg" class="navegação" alt="hashtag">
+            <a href=#>Explore</a>
+          </li>
+          
+          <li class="menu">
+            <img src="../imagens/sino.svg" class="navegação" alt="sino">
+            <a href=#>Notificações</a>
+          </li>
+          
+          <li class="menu">
+            <img src="../imagens/envelope.svg" class="navegação" alt="envelope">
+            <a href=#>Mensagens</a>
+          </li>
+         
+          <li class="menu">
+            <img src="../imagens/comente.svg" class="navegação" alt="comentário">
+            <a href=#>Tópicos</a>
+          </li>
+          
+          <li class="menu">
+            <img src="../imagens/do-utilizador.svg" class="navegação" alt="busto">
+            <a href=#>Perfil</a>
+          </li>
+          
+          <li class="menu">
+            <span class="iconify" id="icon1"  data-icon="ic:outline-more-vert" style="color: #805b10;"></span>
+            <a href=#> More </a>
+          </li>         
+        </ul>
+
+        <div id="botãoPiar">
+          <button class="piar" type="button" name="piar"><b>Piar</b></button>
+        </div>
+      </nav>
+
+      <div id="tiraUsuario">
+        <button class="perfil" type="button" name="irPerfil">
+          <div id="FotoUser">
+            <img src="../imagens/neymar.jpeg" class="user" alt="PhotoUser">
+          </div>
+          <div id="nome">
+            <p class="name"><b>Hugo Feijão</b></p>
+            <p class="usuario">@Hugostojão</p>
+          </div>
+          <div id="perfil">
+            <img src="../imagens/menu.svg" class="ret" alt="Reticências">
+          </div>
+        </button>    
+      </div>
+    </div>
+
+    <div id="principal">
+      <header id="homeInput">
+        <div id="home">
+          <h1><b>Home</b></h1>
+          <img src="../imagens/neymar.jpeg" class="userBig" alt="PhotoUser">
+        </div>
+
+        <div id="inputPiu">
+          <form id="formPiu" action="#">
+            <textarea name="piu" id="txtPiu" placeholder="O que você está pensando?"></textarea>
+            <ul>
+              <li>
+                <span class="caracteres"><span class="caracteres" id="atual"></span>/140</span>
+              </li>
+              <li>
+                <img src="../imagens/layout-fluid-free-icon-font.svg" class="inputImg" alt="galeria">
+              </li>
+              <li>
+                <img src="../imagens/gif (1).png" class="inputImg" alt="GIF">
+              </li>
+              <li>
+                <img src="../imagens/grin-free-icon-font.svg" class="inputImg" alt="gif">
+              </li>
+              <li>
+                <img src="../imagens/marker-free-icon-font.svg" class="inputImg" alt="galeria">
+              </li>
+            </ul>
+        </div>
+            <div id="botãoPiar2">
+              <button id="btn2" type="submit" name="piar"><b>Piar</b></button>
+            </div>
+          </form>
+      </header>
+
+      <main id="pius"></main>
+    </div>
+
+    <section id="pesquisa">
+      <form id="search" action="#"></form>
+        <div id="barraPesquisa">
+          <img id="lupa" src="../imagens/search.svg" alt="lupa">
+          <input type="text" id="searchInput" name="search" placeholder="Pesquisar users">           
+        </div>
+      </form>
+      <h1><b>O que está acontecendo?</b></h1>
+
+      <div id="acontecimentos">
+        <div class="acont">
+          <div class="tituloFoto">
+            <h2>Reality - BBB</h2>
+            <p>Jade foi eliminada da casa mais vigiada do Brasil no último paredão</p>
+          </div>
+          <img class="photoAcontecimentos" src="../imagens/camera.svg" alt="bbb"> 
+        </div>
+
+        <div class="acont">
+          <div class="tituloFoto">
+            <h2>Reality - BBB</h2>
+            <p>Prova de resistência da Americanas passam de 13 horas - Brothers buscam a liderança</p>
+          </div>
+          <img class="photoAcontecimentos" src="../imagens/camera.svg" alt="bbb">  
+        </div>
+
+        <div class="acont">
+          <div class="tituloFoto">
+            <h2>Séries - Netflix</h2>
+            <p>A Netflix acaba de confirmar que a nova temporada de Peaky Blinders será lançada em dezembro de 2022</p>
+          </div>
+          <img class="photoAcontecimentos" src="../imagens/netflix-free-icon-font.svg" alt="bbb">  
+        </div>
+
+      </div>
+    </section>
+    
+  </body>
+  <script src="../javascript/index.js"> </script>
+</html>
